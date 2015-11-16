@@ -1,0 +1,62 @@
+<!--include "public/header.html"-->
+    <!-- 代码 开始 -->
+    <div class="wrapper clear">
+        <div id="fsD1" class="focus">
+            <div id="D1pic1" class="fPic clear">
+                <div class="fcon" style="display: none;">
+                    <a href="WS215i.html"><img src="images/banner/banner5.jpg" style="opacity: 1; "></a>
+                    <!-- <span class="shadow"><a  href="#">dddaaa</a></span> -->
+                </div>
+                <div class="fcon" style="display: none;">
+                    <a href="products-all.html#ProductNas"><img src="images/banner/banner6.jpg" style="opacity: 1; "></a>
+                    <!--  <span class="shadow"><a  href="#">dddfff</a></span> -->
+                </div>
+                <div class="fcon" style="display: none;">
+                    <a href="WS515p.html"><img src="images/banner/banner7.jpg" style="opacity: 1; "></a>
+                    <!-- <span class="shadow"><a  href="#">ddddeee</a></span> -->
+                </div>
+                <div class="fcon" style="display: none;">
+                    <a href="IFC14a.html"><img src="images/banner/banner8.jpg" style="opacity: 1; "></a>
+                    <!--  <span class="shadow"><a  href="#">ddddddd</a></span> -->
+                </div>
+            </div>
+            <div class="fbg">
+                <div class="D1fBt" id="D1fBt">
+                    <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>1</i></a>
+                    <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>2</i></a>
+                    <a href="javascript:void(0)" hidefocus="true" target="_self" class="current"><i>3</i></a>
+                    <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>4</i></a>
+                </div>
+            </div>
+            <span class="prev"></span>
+            <span class="next"></span>
+        </div>
+        <script type="text/javascript">
+        Qfast.add('widgets', {
+            path: "js/terminator2.2.min.js",
+            type: "js",
+            requires: ['fx']
+        });
+        Qfast(false, 'widgets', function() {
+            K.tabs({
+                id: 'fsD1', //焦点图包裹id  
+                conId: "D1pic1", //** 大图域包裹id  
+                tabId: "D1fBt",
+                tabTn: "a",
+                conCn: '.fcon', //** 大图域配置class       
+                auto: 1, //自动播放 1或0
+                effect: 'fade', //效果配置
+                eType: 'click', //** 鼠标事件
+                pageBt: true, //是否有按钮切换页码
+                bns: ['.prev', '.next'], //** 前后按钮配置class                          
+                interval: 4000 //** 停顿时间  
+            })
+        })
+        </script>
+        <!-- 代码 结束 -->
+        <!--    <div class="float-side">
+            <a class="to-to-top">
+            </a>
+        </div> -->
+    </div>
+    <!--include "public/footer.html"-->
