@@ -1,0 +1,58 @@
+// import reset css
+@import "compass/reset";
+
+// color declare
+$headerBg: #f3f3f3;
+$navHover: #e9e9e9;
+$hoverBorder: #cccccc;
+$navFont: #676767;
+$blue: #00569f;
+
+.body {
+  font-family: "Microsoft YaHei" !important;
+  min-width: 1200px;
+}
+
+// header
+.header {
+    height: 92px;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 16px;
+    background-color: $headerBg;
+    span {
+        float: left;
+        margin-top: 25px;
+    }
+    .mainheader {
+        width: 62.5%;
+        margin: 0 auto;
+        .mainnav {
+            margin-left: 300px;
+            width: 426px;
+          li {
+            float: left;
+            width: 142px;
+            line-height: 92px;
+            a {
+              text-decoration: none;
+              text-align: center;
+              display: block;
+              color: $navFont;
+            }
+          }
+        }
+        .mainbar {
+          width: 185px;
+          float: left;
+          line-height: 92px;
+          li {
+            float: left;
+            a {
+              text-decoration: none;
+              font-size: 14px;
+            }
+          }
+        }
+    }
+}
